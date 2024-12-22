@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client_bonus.c                                     :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/11 11:37:03 by yaperalt          #+#    #+#             */
-/*   Updated: 2024/12/22 20:48:16 by yaperalt         ###   ########.fr       */
+/*   Created: 2024/09/10 18:17:53 by yaperalt          #+#    #+#             */
+/*   Updated: 2024/12/22 20:47:01 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <signal.h>
-#include "../libft/libft.h"
+#include "libft.h"
 
-int	main(int argc, char **argv)
+// Checks for a digit (0 through 9).
+
+int	ft_isdigit(int c)
 {
-
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }

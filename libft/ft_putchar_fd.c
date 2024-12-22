@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client_bonus.c                                     :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/11 11:37:03 by yaperalt          #+#    #+#             */
-/*   Updated: 2024/12/22 20:48:16 by yaperalt         ###   ########.fr       */
+/*   Created: 2024/09/17 05:45:55 by yaperalt          #+#    #+#             */
+/*   Updated: 2024/09/17 05:52:07 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <signal.h>
-#include "../libft/libft.h"
+// Like a regular ft_putchar but we pick the fd of our choice.
 
-int	main(int argc, char **argv)
+#include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
 {
-
+	write(fd, &c, 1);
 }

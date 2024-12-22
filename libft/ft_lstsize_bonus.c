@@ -1,19 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client_bonus.c                                     :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/11 11:37:03 by yaperalt          #+#    #+#             */
-/*   Updated: 2024/12/22 20:48:16 by yaperalt         ###   ########.fr       */
+/*   Created: 2024/09/21 19:10:42 by yaperalt          #+#    #+#             */
+/*   Updated: 2024/09/24 16:56:01 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <signal.h>
-#include "../libft/libft.h"
+/*
+	Counts the number of nodes in a list.
+*/
 
-int	main(int argc, char **argv)
+#include "libft.h"
+
+int	ft_lstsize(t_list *lst)
 {
+	size_t	i;
 
+	i = 0;
+	while (lst)
+	{
+		lst = lst->next;
+		i++;
+	}
+	return (i);
 }

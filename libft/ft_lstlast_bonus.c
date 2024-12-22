@@ -1,19 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client_bonus.c                                     :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/11 11:37:03 by yaperalt          #+#    #+#             */
-/*   Updated: 2024/12/22 20:48:16 by yaperalt         ###   ########.fr       */
+/*   Created: 2024/09/21 20:22:00 by yaperalt          #+#    #+#             */
+/*   Updated: 2024/09/24 16:55:50 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <signal.h>
-#include "../libft/libft.h"
+/*
+	Returns the last node of the list.
+*/
 
-int	main(int argc, char **argv)
+#include "libft.h"
+
+t_list	*ft_lstlast(t_list *lst)
 {
-
+	if (!lst)
+		return (NULL);
+	while (lst->next != NULL)
+		lst = lst->next;
+	return (lst);
 }

@@ -1,19 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client_bonus.c                                     :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/11 11:37:03 by yaperalt          #+#    #+#             */
-/*   Updated: 2024/12/22 20:48:16 by yaperalt         ###   ########.fr       */
+/*   Created: 2024/09/11 19:43:41 by yaperalt          #+#    #+#             */
+/*   Updated: 2024/12/22 05:35:47 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <signal.h>
-#include "../libft/libft.h"
-
-int	main(int argc, char **argv)
+int	ft_isspace(int c)
 {
-
+	return (c == ' ' || (c >= 9 && c <= 13));
 }
