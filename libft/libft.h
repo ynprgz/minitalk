@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 18:18:05 by yaperalt          #+#    #+#             */
-/*   Updated: 2024/12/11 12:01:04 by yaperalt         ###   ########.fr       */
+/*   Updated: 2024/12/25 22:18:46 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,10 @@ int		ft_aux_putnbr(int nb);
 int		ft_aux_unsigned(unsigned long int n);
 int		ft_aux_hex(unsigned long long int n, char hexa);
 int		ft_aux_pointer(unsigned long long ptr);
+
+// Extras
+
+int		ft_strcmp(const char *s1, const char *s2);
+int		ft_isspace(int c);
 
 #endif

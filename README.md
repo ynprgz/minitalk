@@ -31,3 +31,6 @@ from <stdlib.h>
 - exit: Terminates the calling process immediately.
 
 ## Resources
+
+- [Beej's Guides](https://beej.us/guide/bgipc/html/split/signals.html#signals)
+- [Beej's Guides 2](https://beej.us/guide/bgc/html/split/signal-handling.html#signal-handling)
