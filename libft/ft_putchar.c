@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:53:43 by yaperalt          #+#    #+#             */
-/*   Updated: 2024/12/11 11:55:39 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/01/28 23:53:02 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 int	ft_putchar(char c)
 {
-	return (write(1, &c, 1));
+	ft_putchar_fd(c, 1);
+	return (1);
 }

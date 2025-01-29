@@ -10,7 +10,7 @@ The purpose of this project is to code a small data exchange program using UNIX 
 ## Understanding Minitalk
 ### Allowed functions explanation
 
-from <signal.h>
+from <signal.h> and <unistd.h>
 
 - signal: Is a function used to handle asynchronous events like interrupts or termination signals.
 Takes two paramenters, the signal number and a function pointer to the signal handler.
@@ -30,7 +30,14 @@ from <stdlib.h>
 - malloc and free: Allocate memory dynamically and free allocated memory.
 - exit: Terminates the calling process immediately.
 
+
+### SIGUSR1 and SIGUSR2
+
+Are all the signals predefined? What if you want to send a signal that has significance that only you understand to a process? There are two signals that aren’t reserved: SIGUSR1 and SIGUSR2. You are free to use these for whatever you want and handle them in whatever way you choose.
+
+
 ## Resources
 
 - [Beej's Guides](https://beej.us/guide/bgipc/html/split/signals.html#signals)
 - [Beej's Guides 2](https://beej.us/guide/bgc/html/split/signal-handling.html#signal-handling)
+- Just use 'man <function name>'.

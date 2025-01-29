@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 18:18:05 by yaperalt          #+#    #+#             */
-/*   Updated: 2024/12/25 22:18:46 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/01/28 21:57:21 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdarg.h>
+# include <signal.h>
 
 // Libc
 
