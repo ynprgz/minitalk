@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 11:36:25 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/01/29 00:37:29 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/03 22:41:48 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 #include <stddef.h>
 #include <unistd.h>
 #include <stdio.h>
-#include <stdarg.h>
 #include <signal.h>
 
 // "1 << i" creates a mask with a 1 at the i-th position.

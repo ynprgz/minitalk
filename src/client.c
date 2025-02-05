@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 11:36:16 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/01/28 23:44:22 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/05 22:25:04 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,7 @@
 #include <stddef.h>
 #include <unistd.h>
 #include <stdio.h>
-#include <stdarg.h>
 #include <signal.h>
-
-// int bit helps us go through all the bits that represent char c
-// A char is always 1 byte(8 bits). An int is platform-depedent, but the C
-// standard gurantees that an int is at least 16 bits.
-//
-// usleep(100) enters a 100 microseconds delay so it ensures the signal is
-// procesed by the operating system and also reduce the possibility of signal
-// overlapping
-//
-// MSB(Most Significant Bit), LSB (Least Significant Bit).
 
 #define ENDOFMESSAGE '\n'
 
@@ -53,7 +42,7 @@ int	main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		write(1, "Usage: ./client <server_pid> <message>\n", 38);
+		write(STDERR_FILENO, "Usage: ./client <server_pid> <message>\n", 39);
 		return (1);
 	}
 	server_pid = ft_atoi(argv[1]);
@@ -66,3 +55,13 @@ int	main(int argc, char **argv)
 	send_char(server_pid, ENDOFMESSAGE);
 	return (0);
 }
+
+// int bit helps us go through all the bits that represent char c
+// A char is always 1 byte(8 bits). An int is platform-depedent, but the C
+// standard gurantees that an int is at least 16 bits.
+//
+// usleep(100) enters a 100 microseconds delay so it ensures the signal is
+// procesed by the operating system and also reduce the possibility of signal
+// overlapping
+//
+// MSB(Most Significant Bit), LSB (Least Significant Bit).
