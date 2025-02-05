@@ -35,7 +35,7 @@ bonus: server_bonus client_bonus
 
 client_bonus: $(LIBFT_A) $(SRC_CLIENT_BONUS)
 	@cc $(CFLAGS) -o $(NAME_C_BONUS) $(SRC_CLIENT_BONUS) $(LIBFT_A)
-	@echo "\n Server executable created \n"
+	@echo "\n Client executable created \n"
 
 server_bonus: $(LIBFT_A) $(SRC_SERVER_BONUS)
 	@cc $(CFLAGS) -o $(NAME_BONUS) $(SRC_SERVER_BONUS) $(LIBFT_A)
